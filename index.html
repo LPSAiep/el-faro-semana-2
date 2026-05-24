@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>El Faro | Periódico Digital</title>
+
+  <style>
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;line-height:1.5;color:#111}
+    header,nav,main,section,article,footer{display:block}
+    .contenedor{max-width:1100px;margin:0 auto;padding:16px}
+    header{border-bottom:1px solid #ddd;background:#fff}
+    .cabecera{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+    .marca{display:flex;align-items:center;gap:14px}
+    .logo{width:90px;height:90px;object-fit:contain;border:1px solid #ddd;border-radius:10px;padding:6px;background:#fff}
+    h1{margin:0;font-size:2rem}
+    .sub{margin:4px 0 0;color:#444}
+    nav{border-bottom:1px solid #ddd;background:#fff}
+    nav ul{list-style:none;margin:0;padding:10px 0;display:flex;gap:10px;flex-wrap:wrap}
+    nav a{text-decoration:none;color:#111;border:1px solid #ddd;border-radius:10px;padding:8px 12px;display:inline-block}
+    nav a:hover{border-color:#1e5bd6}
+    section{margin:18px 0;border:1px solid #ddd;border-radius:12px;padding:16px;background:#fff}
+    h2{margin:0 0 10px;font-size:1.35rem}
+    h3{margin:16px 0 10px;font-size:1.1rem}
+    table{width:100%;border-collapse:collapse;margin-top:10px}
+    th,td{border:1px solid #ddd;padding:10px;vertical-align:top;text-align:left}
+    th{background:#f4f6ff}
+    .media{display:grid;grid-template-columns:1fr;gap:14px;margin-top:14px}
+    @media (min-width:900px){.media{grid-template-columns:1fr 1fr}}
+    video,audio{width:100%;display:block}
+    article{border:1px solid #ddd;border-radius:10px;padding:12px;margin-top:10px}
+    footer{border-top:1px solid #ddd;background:#fff;color:#444}
+    footer p{margin:6px 0}
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header id="inicio">
+    <div class="contenedor cabecera">
+      <div class="marca">
+        <img class="logo" src="assets/img/el-faro-logo.png" alt="Logotipo del diario El Faro" width="90" height="90">
+        <div>
+          <h1>EL FARO</h1>
+          <p class="sub"><em>Luz en la información científica, tecnológica e informática</em></p>
+        </div>
+      </div>
+      <div><strong>Edición:</strong> 2026</div>
+    </div>
+  </header>
+
+  <!-- NAV -->
+  <nav>
+    <div class="contenedor">
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#generales">Noticias</a></li>
+        <li><a href="#deporte">Deporte</a></li>
+        <li><a href="#negocios">Negocios</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- MAIN -->
+  <main class="contenedor">
+
+    <!-- NOTICIAS GENERALES -->
+    <section id="generales">
+      <h2>Noticias Generales</h2>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Título</th>
+            <th>Categoría</th>
+            <th>Texto del artículo</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Chile impulsa simulaciones climáticas con supercomputación</td>
+            <td>Ciencia Computacional</td>
+            <td>Centros de investigación chilenos utilizan supercomputadores para ejecutar modelos matemáticos avanzados que permiten anticipar escenarios climáticos extremos y su impacto en infraestructura crítica.</td>
+          </tr>
+          <tr>
+            <td>Avances en inteligencia artificial explicable</td>
+            <td>Informática</td>
+            <td>Universidades nacionales desarrollan algoritmos capaces de explicar sus decisiones, aumentando la confianza en sistemas críticos y mejorando la trazabilidad de resultados.</td>
+          </tr>
+          <tr>
+            <td>Sensores cuánticos aplicados a la minería chilena</td>
+            <td>Tecnología</td>
+            <td>Investigadores implementan sensores basados en principios cuánticos para detectar variaciones mínimas en el subsuelo, mejorando exploración y seguridad.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="media">
+        <div>
+          <h3>Vídeo informativo</h3>
+          <video controls preload="metadata" width="420">
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            <source src="https://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg">
+            Tu navegador no soporta vídeo HTML5.
+          </video>
+        </div>
+
+        <div>
+          <h3>Audio informativo</h3>
+          <audio controls preload="metadata">
+            <source src="https://www.w3schools.com/html/horse.ogg" type="audio/ogg">
+            <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+            Tu navegador no soporta audio HTML5.
+          </audio>
+        </div>
+      </div>
+    </section>
+
+    <!-- DEPORTE -->
+    <section id="deporte">
+      <h2>Deporte</h2>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Título</th>
+            <th>Categoría</th>
+            <th>Texto del artículo</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Olimpiadas Chilenas de Robótica Educativa</td>
+            <td>Tecnología y Educación</td>
+            <td>Estudiantes de todo el país compiten aplicando programación, electrónica y lógica computacional para resolver desafíos técnicos.</td>
+          </tr>
+          <tr>
+            <td>Competencia universitaria de drones autónomos</td>
+            <td>Ingeniería</td>
+            <td>Equipos universitarios desarrollan navegación autónoma utilizando visión artificial, sensores y algoritmos de control.</td>
+          </tr>
+          <tr>
+            <td>Maratón científica y tecnológica en Valparaíso</td>
+            <td>Divulgación Científica</td>
+            <td>Evento que combina actividad física y divulgación científica, integrando charlas sobre avances tecnológicos actuales.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- NEGOCIOS -->
+    <section id="negocios">
+      <h2>Negocios</h2>
+
+      <article>
+        <h3>Startup chilena desarrolla software predictivo industrial</h3>
+        <p><strong>Categoría:</strong> Emprendimiento Tecnológico</p>
+        <p>Empresa nacional aplica análisis de datos y modelos predictivos para anticipar fallos en procesos industriales, reduciendo costes y mejorando la eficiencia operativa.</p>
+      </article>
+
+      <article>
+        <h3>Crecimiento del sector de ciberseguridad en Chile</h3>
+        <p><strong>Categoría:</strong> Informática</p>
+        <p>El aumento de amenazas digitales impulsa la creación de empresas especializadas en protección de sistemas, redes y datos críticos.</p>
+      </article>
+
+      <article>
+        <h3>Inversión en centros de datos de alta eficiencia energética</h3>
+        <p><strong>Categoría:</strong> Tecnología</p>
+        <p>Nuevos data centers incorporan automatización y optimización térmica, posicionando a Chile como un polo estratégico digital en la región.</p>
+      </article>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="contenedor">
+      <p>© 2026 El Faro — Sitio desarrollado en HTML5</p>
+      <p>Valparaíso, Chile</p>
+    </div>
+  </footer>
+
+</body>
+</html>
